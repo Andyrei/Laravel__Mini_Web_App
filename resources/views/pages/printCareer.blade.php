@@ -18,6 +18,6 @@
     <div class="d-flex justify-content-between p-2 my-1 bg-light text-dark"><span>Adress: </span> {{$careerData['adress']}}</div>
     <div class="d-flex justify-content-between p-2 my-1 bg-secondary"><span>City: </span> {{$careerData['city']}}</div>
     <div class="d-flex justify-content-between p-2 my-1 bg-light text-dark"><span>Message: </span> "{{$careerData['msg']}}"</div>
-    <div class="d-flex justify-content-between p-2 my-1 bg-secondary"><a href="{{$careerData['cv']}}" download="curriculum" target="_blank">Curriculum: </a> {{$careerData['cv']}}</div>
+    <div class="d-flex justify-content-between p-2 my-1 bg-secondary"><a href="storage/curricula/{{$file_name}}" download="curriculum" target="_blank">Curriculum: </a> {{$file_name}}</div>
 
 @endsection

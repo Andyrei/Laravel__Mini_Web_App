@@ -9,7 +9,11 @@ class ContactHandler extends Controller
 {
     public function getAllInputs(Request $request) {
         $contactData = $request-> all();
-
+        $validate = $request -> validate([
+            "name"=>"required",
+            "mail"=>" email",
+            "msg"=> "required"
+        ]);
         return view('pages.printContact', compact('contactData'));
     }
 }
